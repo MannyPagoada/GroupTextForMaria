@@ -12,7 +12,7 @@ client = Client(account_sid, auth_token)
 #list of group pf numbers 
 group_numbers=[
     '+14088578761',
-    '+13232828574',
+    
 ]
 
 #message to send
@@ -26,5 +26,7 @@ def sendGroupMessage(group_numbers, message):
             from_='+18449932177',
             body=message
         )
-
-sendGroupMessage(group_numbers, message_to_send)
+try:
+    sendGroupMessage(group_numbers, message_to_send)
+except Exception as e:
+    print(f"An error occured: {str(e)}")

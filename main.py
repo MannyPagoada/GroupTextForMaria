@@ -12,11 +12,13 @@ client = Client(account_sid, auth_token)
 #list of group pf numbers 
 group_numbers=[
     '+14088578761',
-    
+    '+14088271511',
+    '+14084982819',
+    '+13232828574',
 ]
 
 #message to send
-message_to_send="This is a test for the catholic club text message system."
+message_to_send="Hello, I am writing code for Maria. She needs a text message system set up. If you get a text from me Let me know! -Manuel"
 
 
 def sendGroupMessage(group_numbers, message):
